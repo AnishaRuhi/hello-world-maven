@@ -6,6 +6,5 @@ public class App {
         System.out.println("Hello World from Maven JAR created in Eclipse!");
         System.out.println("Hello World From GitHub now");
         System.out.println("Writing 3rd line to check autometic build trigger");
-        System.out.println("Writing 4th line to check autometic build trigger by polling");
     }
 }
