@@ -7,5 +7,6 @@ public class App {
         System.out.println("Hello World From GitHub now");
         System.out.println("Writing 3rd line to check autometic build trigger");
         System.out.println("Writing 4th line to check autometic build trigger using PAT... New...Welcome");
+        System.out.println("Using GitHub Actions");
     }
 }
