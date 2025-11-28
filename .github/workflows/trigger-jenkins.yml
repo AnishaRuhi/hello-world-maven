@@ -12,7 +12,7 @@ jobs:
     steps:
       - name: Trigger Jenkins Remote Build
         run: |
-          JENKINS_URL="http://localhost:8080"
+          JENKINS_URL="http://111.125.193.102:8080"
           JOB="GitHub CICD Using GItHub Actions"
           TOKEN="117820228e0c5831e55cf24a9f1add697f"
           USER="Anisha"
