@@ -1,22 +1,17 @@
-name: Trigger Jenkins Build
+name: Trigger Jenkins Build Automatically
 
 on:
   push:
     branches:
       - main
+      - master
 
 jobs:
-  call-jenkins:
+  trigger-jenkins:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Trigger Jenkins Remote Build
+      - name: Trigger Jenkins Job
         run: |
-          JENKINS_URL="http://111.125.193.102:8080"
-          JOB="GitHub CICD Using GItHub Actions"
-          TOKEN="117820228e0c5831e55cf24a9f1add697f"
-          USER="Anisha"
-
-          curl -X POST \
-            "$JENKINS_URL/job/$JOB/build" \
-            --user "$USER:$TOKEN"
+          curl -X POST "$JENKINS_URL/job/$JENKINS_JOB/build" \
+            --user "$JENKINS_USER:$JENKINS_TOKEN"
